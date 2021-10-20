@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_map_flutter/pages/homepage.dart';
+import 'package:google_map_flutter/provider/location_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (BuildContext context) => LocationProvider(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
