@@ -5,7 +5,7 @@
         android:icon="@mipmap/ic_launcher">
 
          <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyByONCabpBEt47JqZqLAM38rP02FIwSjwE"/>
+            android:value="yourapikey"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
